@@ -1,71 +1,71 @@
 /* Стили для карточки */
 .card-container {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-	width: 80%;
-	height: 80vh;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	display: flex;
-	flex-direction: column;
+    width: 80%;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .card-header {
-	display: flex;
-	align-items: center;
-	padding: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
 .circle {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .card-title {
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .card-comment {
-	padding: 20px;
-	font-size: 18px;
+    padding: 20px;
+    font-size: 18px;
 }
 
 .card-footer {
-	padding: 20px;
+    padding: 20px;
 }
 
 .strip {
-	width: 100%;
-	height: 5px;
-	border-radius: 5px;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
 }
 
 /* Стили для листания */
 .swiper-container {
-	width: 100%;
-	height: 100vh;
+    width: 100%;
+    height: 100vh;
 }
 
 .swiper-wrapper {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .swiper-slide {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
