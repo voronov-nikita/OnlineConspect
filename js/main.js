@@ -1,16 +1,16 @@
 // Инициализация Swiper
-const swiper = new Swiper(".swiper-container", {
-	slidesPerView: 1,
-	spaceBetween: 30,
-	loop: true,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
 
 // Добавление карточек в контейнер
@@ -49,21 +49,21 @@ swiper.appendSlide(`
   `);
 
 // Анимация листания
-swiper.on("slideChange", () => {
-	const activeSlide = swiper.slides[swiper.activeIndex];
-	activeSlide.classList.add("animate");
-	setTimeout(() => {
-		activeSlide.classList.remove("animate");
-	}, 500);
+swiper.on('slideChange', () => {
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    activeSlide.classList.add('animate');
+    setTimeout(() => {
+        activeSlide.classList.remove('animate');
+    }, 500);
 });
 
 // Анимация нажатия
-swiper.on("click", (swiper, event) => {
-	const target = event.target;
-	if (target.classList.contains("card")) {
-		target.classList.add("pressed");
-		setTimeout(() => {
-			target.classList.remove("pressed");
-		}, 500);
-	}
+swiper.on('click', (swiper, event) => {
+    const target = event.target;
+    if (target.classList.contains('card')) {
+        target.classList.add('pressed');
+        setTimeout(() => {
+            target.classList.remove('pressed');
+        }, 500);
+    }
 });
