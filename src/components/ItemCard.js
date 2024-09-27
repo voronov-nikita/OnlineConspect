@@ -1,21 +1,25 @@
 //
 // Карточка предмета.
+// Неоьходимо передавать объект с
 //
 
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 
-export const CardBox = ({ data }) => {
+export const CardBox = () => {
+    const testFunc = () => {
+        console.log('hello');
+    };
+
     return (
-        <View style={styles.container}>
-            <Text></Text>
-        </View>
+        <TouchableOpacity onPress={testFunc}>
+            <Text>hello</Text>
+        </TouchableOpacity>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor: "#000"
     },
 });
