@@ -7,10 +7,12 @@
 import { StyleSheet, View, Text } from 'react-native';
 import * as React from 'react';
 
+import { CardBox } from '../components/ItemCard';
+
 export const HomeScreen = () => {
     return (
         <View style={styles.container}>
-            <Text>Hello Home</Text>
+            <CardBox />
         </View>
     );
 };
