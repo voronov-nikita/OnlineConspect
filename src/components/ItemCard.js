@@ -6,20 +6,25 @@
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 
-export const CardBox = () => {
-    const testFunc = () => {
-        console.log('hello');
+//
+export const CardBox = ({ nav }) => {
+    const toPage = () => {
+        nav.navigate('Homework');
     };
 
     return (
-        <TouchableOpacity onPress={testFunc}>
-            <Text>hello</Text>
-        </TouchableOpacity>
+        <View style={styles.container}>
+            <TouchableOpacity onPress={toPage}>
+                <Text>К домашке</Text>
+            </TouchableOpacity>
+        </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "#000"
+        borderWidth: 1,
+        borderColor: 'black',
+        borderRadius: 5,
     },
 });

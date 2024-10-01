@@ -37,21 +37,21 @@ export default function App() {
                     name="About"
                     component={AboutScreen}
                     options={{
-                        headerShown: false,
+                        headerTitleAlign: 'center',
                     }}
                 />
                 <Stack.Screen
                     name="Help"
                     component={HelpScreen}
                     options={{
-                        headerShown: false,
+                        headerTitleAlign: 'center',
                     }}
                 />
                 <Stack.Screen
                     name="Homework"
                     component={HomeworkScreen}
                     options={{
-                        headerShown: false,
+                        headerTitleAlign: 'center',
                     }}
                 />
             </Stack.Navigator>

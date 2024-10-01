@@ -9,10 +9,10 @@ import * as React from 'react';
 
 import { CardBox } from '../components/ItemCard';
 
-export const HomeScreen = () => {
+export const HomeScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <CardBox />
+            <CardBox nav={navigation}/>
         </View>
     );
 };
@@ -20,5 +20,7 @@ export const HomeScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 });
